@@ -1,14 +1,18 @@
 .about-section {
   text-align: center;
-  padding: 2rem;
+  padding: 5rem;
 }
 
 .intro {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   font-size: 1.1rem;
-  max-width: 600px;
+  max-width: 65rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.about-section h2 {
+  margin-bottom: 1rem; /* space between heading and paragraph */
 }
 
 .skills-wrapper {
@@ -25,7 +29,7 @@
   flex: 0 0 auto;
   display: flex;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color:rgb(35, 35, 230);
   padding: 0.6rem 1rem;
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
