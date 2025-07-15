@@ -4,30 +4,32 @@
     max-width: 75rem;
     margin :0 auto;
     overflow: hidden;
+    position :relative;
 
 }
 
 .bg {
     position:  absolute;
-    top : -4rem;
+    top : 0;
     right: 0;
     z-index: -1;
     object-fit: cover;
-    height :100vh;
+    height :100%;
 
 }
 
-.introContent{
-    height :100vh;
-    width : 100vw;
-    padding :2rem;
+.introContent {
+    height: 100%;
+    width: 100%;
+    max-width: 75rem;
+    padding: 2rem;
     font-size: 3rem;
     font-weight: 700;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
+    position: relative;
+    z-index: 1;
 }
 
 .hello{
@@ -39,10 +41,13 @@
     color :yellow
 
 }
-.introPara{
-    font-size: medium;
-    font-weight: 100;
+.introPara {
+    font-size: 1rem; /* Smaller size */
+    font-weight: 300; /* Light font */
+    line-height: 1.5; /* Better readability */
+    max-width: 40rem; /* Prevents it from stretching full width */
 }
+
 
 .btn{
     background: white;
