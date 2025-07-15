@@ -4,12 +4,12 @@ import './projects.css';
 const projects = [
   {
     title: 'Weather App',
-    description: 'A simple app to check weather by city using OpenWeather API.',
+    description: 'A simple app to check the weather by city using the OpenWeather API.',
     githubLink: 'https://github.com/yourusername/weather-app',
   },
   {
     title: 'Todo List',
-    description: 'Manage your daily tasks efficiently with a React-powered todo list.',
+    description: 'Manage your daily tasks efficiently with a React-powered to-do list.',
     githubLink: 'https://github.com/yourusername/todo-list',
   },
   {
@@ -22,7 +22,11 @@ const projects = [
 const Project = () => {
   return (
     <div className="projects-section">
-      <h2>My Projects</h2>
+      <h2 className="project-title">My Projects</h2>
+      <p className="project-desc">
+        I take pride in paying attention to the smallest details. These are some of the projects I'm currently working on and have yet to complete.
+      </p>
+
       <div className="project-list">
         {projects.map((project, index) => (
           <a
