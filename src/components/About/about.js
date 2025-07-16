@@ -21,7 +21,7 @@ const skills = [
 const About = () => {
   return (
     <div className="about-section">
-      <h2>About Me</h2>
+      <h2 className='abouttitle'>About Me</h2>
       <p className="intro">
         I'm a driven and passionate developer trained as a full-stack developer at <strong>WeThinkCode_</strong>. I specialize in modern technologies and frameworks, and I thrive on building efficient, scalable, and user-friendly applications.
       </p>

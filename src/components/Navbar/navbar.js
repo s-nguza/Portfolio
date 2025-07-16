@@ -1,8 +1,8 @@
 import React from 'react';
 import './navbar.css'
-import Alphs from '../asserts/AlphS.png';
+import Alphs from '../../asserts/AlphS.png';
 import {Link} from 'react-scroll';
-import contactImg from '../asserts/contact.png'
+import contactImg from '../../asserts/contact.png'
 
 const Navbar = () => {
   return (
