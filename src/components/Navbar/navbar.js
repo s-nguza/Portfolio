@@ -15,11 +15,13 @@ const Navbar = () => {
       <Link activeClass='active' to='contactPage' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Contact</Link>
 
     </div>
-    <button className='desktopMenuBtn'>
+    <button className='desktopMenuBtn' onClick={()=>{
+      document.getElementById('contactPage').scrollIntoView({behavior: 'smooth'});
+    }}>
       <img src={contactImg} alt ="contact" className='desktopMenuImg'/>Contact Me</button>    
       
       </nav>
-    )
-}
+    
+)}
 
 export default Navbar
