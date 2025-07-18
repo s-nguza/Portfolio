@@ -9,10 +9,10 @@ const Navbar = () => {
     <nav className='navbar'>
     <img src = {Alphs} alt="Alphs" className= 'Alphs'/>
     <div className='desktopMenu'>
-      <Link className='desktopMenuListItem'>Home</Link>
-      <Link className='desktopMenuListItem'>About</Link>
-      <Link className='desktopMenuListItem'>Portfolio</Link>
-      <Link className='desktopMenuListItem'>Clients</Link>
+      <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Home</Link>
+      <Link activeClass='active' to='about-section' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>About</Link>
+      <Link activeClass='active' to='projects-section' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Projects</Link>
+      <Link activeClass='active' to='contactPage' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Contact</Link>
 
     </div>
     <button className='desktopMenuBtn'>
