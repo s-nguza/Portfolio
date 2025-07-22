@@ -7,6 +7,7 @@ import btnimage from '../../asserts/hireme.png'
 const Intro = () => {
   return (
     <section id ='intro'>
+       <div className='introWrapper'>
         <div className=' introContent'>
             <span className='hello'> Hello,</span>
             <span className='introtext'> I'm<span className='introName'> Siyabonga</span><br/>fullstack developer</span>
@@ -17,10 +18,7 @@ const Intro = () => {
         <div className="introImgContainer">
           <img src={profilepic} alt="Siyabonga" className="introImg" />
         </div>
-      
-
-    
-
+        </div>
     </section> 
   )
 }
