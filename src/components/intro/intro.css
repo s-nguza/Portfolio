@@ -85,14 +85,12 @@
   overflow-x: auto;
   padding: 1rem 0;
   gap: 1rem;
-  justify-content: center;
 }
 
 .link-card {
   flex: 0 0 auto;
   display: flex;
-  align-items: center;
-  background-color:yellow;
+  background-color:yellowgreen;
   padding: 0.7rem 1.2rem;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -103,10 +101,16 @@
 }
 
 .link-icon {
-  height: 10px;
-  width: 10px;
+  height: 24px;
+  width: 24px;
   margin-right: 0.5rem;
 }
+.link-name{
+font-weight: 600;
+  font-size: 1rem;
+}
+
+
 
 
   /* Responsive adjustment */
