@@ -1,4 +1,4 @@
-
+import { useEffect, useRef, useState } from 'react';
 import './about.css';
 import pythonLogo from '../../asserts/python.svg';
 import javaLogo from '../../asserts/java.png';
@@ -19,11 +19,53 @@ const skills = [
 ];
 
 const About = () => {
+  const introRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const currentRef = introRef.current;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+        } else {
+          setVisible(false); // reset so it replays
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
+
+  const introText =
+    "I'm a driven and passionate developer trained as a full-stack developer at WeThinkCode_. I specialize in modern technologies and frameworks, and I thrive on building efficient, scalable, and user-friendly applications.";
+  const words = introText.split(' ');
+
   return (
     <div className="about-section">
       <h2 className='abouttitle'>About Me</h2>
-      <p className="intro">
-        I'm a driven and passionate developer trained as a full-stack developer at <strong>WeThinkCode_</strong>. I specialize in modern technologies and frameworks, and I thrive on building efficient, scalable, and user-friendly applications.
+      <p className="intro" ref={introRef}>
+        {words.map((word, index) => (
+          <span
+            key={index}
+            className={`intro-word ${visible ? 'visible' : ''}`}
+            style={{
+              animationDelay: `${index * 0.05}s`
+            }}
+          >
+            {word}&nbsp;
+          </span>
+        ))}
       </p>
 
       <div className="skills-wrapper">

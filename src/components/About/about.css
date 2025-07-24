@@ -66,3 +66,38 @@
   justify-content: center;
 
 }
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro-word {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(10px);
+}
+
+.intro-word.visible {
+  animation: fadeIn 0.4s forwards;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  
+  }
+  
+}
