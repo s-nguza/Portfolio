@@ -24,11 +24,17 @@
 
 .skills-wrapper {
   width: 100%;
-  max-width: 600px; /* or any width matching your paragraph area */
+  max-width: 1000px; /* or any width matching your paragraph area */
   overflow: hidden;
   margin: 2rem auto;
   position: relative;
+  /* Apply a fade effect on left and right sides */
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
+
 /* Animated container */
 .skills-scroll {
   display: flex;
