@@ -1,7 +1,7 @@
-import React from 'react';
+
 import './about.css';
 import pythonLogo from '../../asserts/python.svg';
-import javaLogo from '../../asserts/python.svg';
+import javaLogo from '../../asserts/java.png';
 import jsLogo from '../../asserts/javascript.svg';
 import reactLogo from '../../asserts/react.svg';
 import tsLogo from '../../asserts/typescript.svg';
