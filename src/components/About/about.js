@@ -45,7 +45,7 @@ const About = () => {
         observer.unobserve(currentRef);
       }
     };
-  }, []);
+    }, []);
 
   const introText =
     "I'm a driven and passionate developer trained as a full-stack developer at WeThinkCode_. I specialize in modern technologies and frameworks, and I thrive on building efficient, scalable, and user-friendly applications.";
@@ -69,13 +69,16 @@ const About = () => {
       </p>
 
       <div className="skills-wrapper">
-        {skills.map((skill, index) => (
-          <div className="skill-card" key={index}>
-            <img src={skill.image} alt={skill.name} className="skill-icon" />
-            <span className="skill-name">{skill.name}</span>
-          </div>
-        ))}
+  <div className="skills-scroll">
+    {skills.concat(skills).map((skill, index) => (
+      <div className="skill-card" key={index}>
+        <img src={skill.image} alt={skill.name} className="skill-icon" />
+        <span className="skill-name">{skill.name}</span>
       </div>
+    ))}
+  </div>
+</div>
+
     </div>
   );
 };

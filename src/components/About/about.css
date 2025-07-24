@@ -23,12 +23,15 @@
 }
 
 .skills-wrapper {
+  width: 100%;
+  max-width: 600px; /* or any width matching your paragraph area */
+  overflow: hidden;
+  margin: 2rem auto;
+  position: relative;
+}
+/* Animated container */
+.skills-scroll {
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  padding: 1rem 0;
-  gap: 1rem;
-  justify-content: center;
   animation: scrollSkills 20s linear infinite;
 }
 
