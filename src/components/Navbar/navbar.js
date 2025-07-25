@@ -15,7 +15,6 @@ const Navbar = () => {
       <Link activeClass='active' to='about-section' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>About</Link>
       <Link activeClass='active' to='projects-section' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Projects</Link>
       <Link activeClass='active' to='contactPage' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Contact</Link>
-
     </div>
     <button className='desktopMenuBtn' onClick={()=>{
       document.getElementById('contactPage').scrollIntoView({behavior: 'smooth'});
@@ -31,7 +30,6 @@ const Navbar = () => {
     </div>    
         
       </nav>
-    
 )}
 
 export default Navbar

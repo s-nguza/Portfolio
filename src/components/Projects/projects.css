@@ -3,60 +3,77 @@
     padding-bottom: 2rem;
     width: 100vw;
     max-width: 75rem;
-    margin :0 auto;
+    margin: 0 auto;
     overflow: hidden;
-    position :relative;         /* make it fill the full screen height */
+    position: relative;
     text-align: center;
 }
-.project-desc{
+
+.project-desc {
     padding: 5%;
     text-align: center;
-
 }
+
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
 .project-card {
-  display: block;
-  text-decoration: none;
-  color: #333;
-  background: white;
-  border-radius: 16px;
-  padding: 2rem;
-  width: 320px;
-  height: 220px;                  /* fixed height to give more presence */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    width: 320px;
+    height: 220px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;  /* start hidden for animation */
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
 }
 
 .project-card h3 {
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
-  color: #007acc;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #007acc;
 }
 
 .project-card p {
-  font-size: 1rem;
-  line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
+/* Animation keyframes - define outside any media query */
+@keyframes bounceUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animate project cards inside section when .animate-bounce is added */
+.animate-bounce .project-card {
+    animation: bounceUp 0.8s ease forwards;
+}
+
+/* Responsive styles */
 @media screen and (max-width: 768px) {
-  .project-list {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem; /* smaller gap on mobile */
-  }
-
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem; /* smaller gap on mobile */
+    }
 }
-
-
