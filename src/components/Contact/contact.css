@@ -1,9 +1,9 @@
 .contact {
   height: calc(100vh - 4rem);
   width: 100vw;
-  display: flex;
   justify-content: center;
-  align-items: center; /* ✅ vertical centering */
+  align-items: center;
+  display:flex;
   padding: 2rem;
   text-align: center;
 }
@@ -70,3 +70,21 @@
 .submitBtn:hover {
   background-color: #005fa3;
 }
+/* Mobile / small screens fix */
+@media screen and (max-width: 480px) {
+  .contact {
+    height: auto;          /* Let height grow naturally */
+    display: block;        /* Disable flex, so no vertical centering */
+    padding: 0rem;         /* Less padding */
+  }
+
+  /* Optional tweaking to keep content from edge to edge */
+  #contactContent {
+    padding: 0 0.5rem; /* horizontal padding inside container */
+  }
+
+  .contactForm {
+    width: 95vw;      /* slightly narrower */
+  }
+}
+
