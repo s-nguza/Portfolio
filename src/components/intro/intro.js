@@ -1,6 +1,5 @@
 import profilepic from '../../asserts/ThisMe.jpg';
 import './intro.css';
-import { Link } from 'react-scroll';
 import btnimage from '../../asserts/hireme.png';
 import githubLogo from '../../asserts/github.svg';
 import social from '../../asserts/social.png';
@@ -32,11 +31,14 @@ const Intro = () => {
             I am a skilled fullstack dev with experience in creating <br /> 
             visually appealing websites
           </p>
-          <Link>
-            <button className='btn'>
-              <img src={btnimage} alt='Hire me' className='btnImg' />My resume
-            </button>
-          </Link>
+          <a 
+                href="/SiyabongaNguzaCV (2).pdf"  
+              download="Siyabonga_Resume" 
+              className='btn' // Keep the button styling
+            >
+              <img src={btnimage} alt='Hire me' className='btnImg' />
+              My resume
+            </a>
 
           {/* Social Links */}
           <div className="links-wrapper">
