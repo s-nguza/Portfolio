@@ -8,6 +8,9 @@
     position: relative;
     text-align: center;
 }
+element.style {
+    gap: 10px;
+}
 
 .project-desc {
     padding: 5%;

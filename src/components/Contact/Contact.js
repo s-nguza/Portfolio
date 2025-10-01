@@ -18,7 +18,7 @@ const Contact = () => {
       alert('Please fill in your name, email, and message before submitting.');
       return; // Stop submission
     }
-
+    
     // Proceed with sending email
     emailjs.sendForm('service_gbirkyo', 'template_fjnokaa', form.current, '9Z_sE9UYSgt4A7fcF')
       .then((result) => {
@@ -50,5 +50,4 @@ const Contact = () => {
     </section>
   )
 }
-
-export default Contact;
+export default Contact

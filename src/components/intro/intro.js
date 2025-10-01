@@ -1,4 +1,3 @@
-import React from 'react';
 import profilepic from '../../asserts/ThisMe.jpg';
 import './intro.css';
 import { Link } from 'react-scroll';
@@ -63,5 +62,4 @@ const Intro = () => {
     </section>
   );
 };
-
 export default Intro;

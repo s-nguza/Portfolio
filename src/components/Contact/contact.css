@@ -7,7 +7,6 @@
   padding: 2rem;
   text-align: center;
 }
-
 #contactContent {
   max-width: 60rem;
   width: 100%;
@@ -84,7 +83,6 @@
   }
 
   .contactForm {
-    width: 95vw;      /* slightly narrower */
+    width: 95vw;     /* slightly narrower */
   }
 }
-

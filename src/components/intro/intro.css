@@ -7,7 +7,6 @@
     position :relative;
 
 }
-
 .introContent {
     height: 100%;
     width: 100%;
@@ -20,12 +19,10 @@
     position: relative;
     z-index: 1;
 }
-
 .hello{
     font-size: 1.75rem;
     font-weight: 100;
 }
-
 .introName{
     color :yellow
 
@@ -36,8 +33,6 @@
     line-height: 1.5; /* Better readability */
     max-width: 40rem; /* Prevents it from stretching full width */
 }
-
-
 .btn{
     background: white;
     margin : 1rem 0;
@@ -59,15 +54,12 @@
     height: 100%;
     padding: 2rem;
 }
-
 .introImgContainer {
   flex-shrink: 0;
   width: 260px;
   height: 260px;
   margin-left: 2rem;
 }
-
-
 .introImg {
     width: 250px;
     height: 250px;
@@ -99,7 +91,6 @@
 .link-card:hover {
   transform: scale(1.1);
 }
-
 .link-icon {
   height: 24px;
   width: 24px;
@@ -111,11 +102,7 @@
     font-size: 1rem;
   
 }
-
-
-
-
-  /* Responsive adjustment */
+ /* Responsive adjustment */
 @media screen and (max-width: 840px) {
     .introWrapper {
         flex-direction: column;
@@ -128,4 +115,3 @@
         height: 180px;
     }
 }
-
